@@ -1,4 +1,5 @@
 $(function() {
+    console.info('Interested in JavaScript? Would you like to do something cool with Leo?');
     var pagePositions = [0];
     var animating;
     var page = 1;
@@ -165,7 +166,6 @@ $(function() {
         });
         var distance = Infinity;
         for (var i = pagePositions.length - 1; i > 0; i--) {
-            console.info(i + ' - ' + pagePositions[i] + ' - ' + $(document).scrollTop());
             if ((pagePositions[i] - $(document).scrollTop()) < 200) {
                 page = i;
                 if (entered.indexOf(page) === -1) {

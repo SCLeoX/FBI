@@ -107,6 +107,8 @@ p.emphasis,span.emphasis {
 .site-link {
 	font-size: 2vw;
 	padding: 0.4vw;
-	color: #666666;
+	color: #555555;
 	position: fixed;
+	background-color: #222222;
+	width: 100%;
 }
