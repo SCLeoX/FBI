@@ -1,59 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-
-	<title>FBI is right</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="jquery-2.2.1.min.js"></script>   <!-- JQuery           -->
-	<script src="TweenMax.min.js"></script>       <!-- GSAP.TweenMax    -->
-	<script src="ScrollToPlugin.min.js"></script> <!-- GSAP.ScrollTo    -->
-	<script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <title>FBI is right</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-2.2.1.min.js"></script>   <!-- JQuery           -->
+    <script src="TweenMax.min.js"></script>       <!-- GSAP.TweenMax    -->
+    <script src="ScrollToPlugin.min.js"></script> <!-- GSAP.ScrollTo    -->
+    <script src="egg.js"></script>                <!-- egg.js           -->
+    <script src="main.js"></script>
 </head>
 <body>
-	<div class="container">
-		<!-- First Page -->
-		<div class="page" data-page="1">
-			<div class="pad" data-pad="10vw"></div>
-			<h1 class="title skewable">FBI is right</h1>
-			<div class="pad" data-pad="4vw"></div>
-			<h2 class="sub-title skewable start-hide">A presentation by Tyler, Leo, Grand and Kevin</h2>
-			<div class="pad" data-pad="4vw"></div>
-			<button class="button-1 button-next-page skewable" data-target="2">Start</button>
-			<div class="pad" data-pad="20vw"></div>
-		</div>
-		<!-- Second Page -->
-		<div class="page" data-page="2">
-			<div class="pad" data-pad="4vw"></div>
-			<h3 class="title-2 skewable">For Our Safety</h3>
-			<div class="pad" data-pad="5vw"></div>
-			<p>
-				As citizens of America, they are obligated to share any information involving the safety of our nation.
-				The information on that phone could determine whether or not there will be another event like 9/11.
-				So many death were caused by 9/11 just imagine what could happen if instead of targeting government buildings they targeted schools, apartments, and businesses.
-				The information on that phone is necessary to keep our home safe.
-			</p>
-			<div class="pad" data-pad="5vw"></div>
-			<button class="button-2 button-next-page skewable" data-target="3">Next</button>
-			<div class="pad" data-pad="20vw"></div>
-		</div>
-		<div class="page" data-page="3">
-			<div class="pad" data-pad="4vw"></div>
-			<h3 class="title-3 skewable">World is changing</h3>
-			<div class="pad" data-pad="5vw"></div>
-			<p>
-				We have many benefits with our digital lives, but the digital age also brings dangers.
-				Criminals can use these technological advances to their advantage, and they have started to.
-				The FBI needs help from Apple to keep up with these advances.
-				The FBI earlier underscored that it is requesting very targeted computer code that would never have to leave Apple's hands. Apple still says no.
-			</p>
-			<div class="pad" data-pad="5vw"></div>
-			<button class="button-3 button-next-page skewable" data-target="4">Next</button>
-			<div class="pad" data-pad="20vw"></div>
-		</div>
-		<div class="page"></div>
-		<div class="page"></div>
-		<div class="page"></div>
-	</div>
+    <div class="container">
+        <p class="site-link">
+            Link: https://scleox.github.io/WP-FBI NOTICE: CASE SENSITIVE.
+        </p>
+        <!-- First Page -->
+        <div class="page" data-page="1">
+            <div class="pad" data-pad="10vw"></div>
+            <h1 class="title skewable">FBI is right</h1>
+            <div class="pad" data-pad="4vw"></div>
+            <h2 class="sub-title skewable start-hide">A presentation by Tyler, Leo, Grand and Kevin</h2>
+            <div class="pad" data-pad="4vw"></div>
+            <div class="button-container"><button class="button-1 button-next-page skewable" data-target="2">Start</button></div>
+            <div class="pad" data-pad="15vw"></div>
+        </div>
+        <!-- Second Page -->
+        <div class="page" data-page="2">
+            <div class="pad" data-pad="4vw"></div>
+            <h3 class="title-2 skewable">For Our Safety</h3>
+            <div class="pad" data-pad="5vw"></div>
+            <p>
+                As citizens of America, they are obligated to share any information involving the safety of our nation.
+                The information on that phone could determine whether or not there will be another event like 9/11.
+                So many death were caused by 9/11 just imagine what could happen if instead of targeting government buildings they targeted schools, apartments, and businesses.
+                The information on that phone is necessary to keep our home safe.
+            </p>
+            <div class="pad" data-pad="5vw"></div>
+            <div class="button-container"><button class="button-2 button-next-page skewable" data-target="3">Next</button></div>
+            <div class="pad" data-pad="15vw"></div>
+        </div>
+        <!-- Third Page -->
+        <div class="page" data-page="3">
+            <div class="pad" data-pad="4vw"></div>
+            <h3 class="title-3 skewable">World is changing</h3>
+            <div class="pad" data-pad="5vw"></div>
+            <p>
+                We have many benefits with our digital lives, but the digital age also brings dangers.
+                Criminals can use these technological advances to their advantage, and they have started to.
+                The FBI needs help from Apple to keep up with these advances. 
+                The FBI earlier underscored that it is requesting very targeted computer code that would never have to leave Apple's hands. Apple still says no.
+            </p>
+            <div class="pad" data-pad="5vw"></div>
+            <div class="button-container"><button class="button-3 button-next-page skewable" data-target="4">Next</button></div>
+            <div class="pad" data-pad="15vw"></div>
+        </div>
+        <!-- Fourth Page -->
+        <div class="page" data-page="4">
+            <div class="pad" data-pad="4vw"></div>
+            <h3 class="title-4 skewable">Purpose of Apple</h3>
+            <div class="pad" data-pad="5vw"></div>
+            <p>
+                As a spectator of this event, we need to think of one important question -- Why does Apple refused to give FBI the password?
+                This questions seems very easy to answer. One of the most likely answer will be -- Apple cares about user's privacy, they are trying to protect them.
+                I, however, do not think that is the real purpose of Apple.
+                One thing you really need to know is that, Apple is a huge for-profit company. They have a organization inside called Board of Directors. Every significate decisions are made by these directors.
+                It is possible that there is one or two of them are really nice people that do not seek for more money but want trouble with the government. It is not possible that most of them are that care about user more than money.
+                Directors became directors for money, not for welfare. They will not make a decision that make them loss money but good for users.
+                Now, here comes the conflict -- Why does Apple refused to give FBI the password?
+                The answer will be "they think it can make more profit".
+                Here comes another question -- How not cooperate with FBI help to make more profit?
+                Actually, the answer to this question is very simple too.
+                Just think, after this event, how you think of Apple Inc?
+                Isn't that "Apple really cares about user's privacy"?
+                Or "Apple is a really security company that even FBI cannot crack into"?
+                That's it!
+                Now, come back to the question -- Why does Apple refused to give FBI the password?
+                Correct answer: They want to build a image of how great Apple is in user's mind. The whole thing is just Apple's hype or it is just Apple's big advertisement, basically same as what you see on Apple.com.  
+            </p>
+            <div class="pad" data-pad="5vw"></div>
+            <div class="button-container"><button class="button-4 button-next-page skewable" data-target="5">Next</button></div>
+            <div class="pad" data-pad="15vw"></div>
+        </div>
+        <!-- Fifth Page -->
+        <div class="page" data-page="5">
+            <div class="pad" data-pad="4vw"></div>
+            <h3 class="title-5 skewable">"Refuse" not "Unable"</h3>
+            <div class="pad" data-pad="5vw"></div>
+            <p>
+                One interesting detail in this even is that Apple refused FBI's request but not unable to execute what FBI's saying.
+                Here comes a point -- Apple self is able to get user's privacy. They just not give it to FBI.
+                So, the fact is that, your information is not totally safe. Apple is still able to get your crypted information.
+                How you believe that Apple will not become bad one day? If I had to choose give my secrets to Apple or government, I would rather choose the government.
+            </p>
+            <div class="pad" data-pad="5vw"></div>
+            <div class="button-container"><button class="button-5 button-next-page skewable" data-target="6">Next</button></div>
+            <div class="pad" data-pad="15vw"></div>
+        </div>
+        <!-- Sixth Page -->
+        <div class="page" data-page="6">
+            <h3 class="title-6 skewable">About this presentation</h3>
+            <p class="ep-1">This presentation is created with HTML5, CSS3, JavaScript and a few image icons below.</p>
+            <p class="ep-2">The content is written by each speaker.</p>
+            <p class="ep-3">The program is written by Leo.</p>
+            <p class="ep-4">Here are big JavaScript libraries used for this presentation:</p>
+            <div class="pad" data-pad="3vw"></div>
+            <a class="ea-1" href="https://jquery.com/" target="_blank">
+                <img src="icon-jquery.png" />
+                <p>jQuery: write less, do more.</p>
+            </a>
+            <div class="pad" data-pad="5vw"></div>
+            <a class="ea-2" href="https://greensock.com/gsap" target="_blank">
+                <img src="icon-gsap.png" />
+                <p>GSAP: Green Sock Animation Platform.</p>
+            </a>
+            <div class="pad" data-pad="5vw"></div>
+            <p class="ep-5">Website is host on GitHub.</p>
+            <div class="pad" data-pad="3vw"></div>
+            <a class="ea-3" href="https://github.com/SCLeoX/WP-FBI" target="_blank">
+                <img src="icon-github.png" />
+                <p>GitHub: Where softwares are built.</p>
+            </a>
+            <div class="pad" data-pad="5vw"></div>
+            <p class="ep-6">
+                This presentation is open-source. If you want, you can click the Github Icon above to access the code.
+            </p>
+            <div class="pad" data-pad="200vw"></div>
+            <p class="ep-7">
+                There isn't anything here :)
+            </p>
+            <div class="pad" data-pad="5vw"></div>
+        </div>
+    </div>
 </body>
 </html>
