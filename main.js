@@ -71,7 +71,7 @@ $(function() {
 		$('.skewable', '.p' + page).each(function() {
 			var JT = $(this);
 			if (JT.hasClass('skew')) {
-				if (Math.random() < 0.8) {
+				if (Math.random() < 0.7) {
 					JT.removeClass('skew');
 				}
 			} else {
@@ -123,7 +123,7 @@ $(function() {
 			}
 		}
 	};
-	$(window).scroll(onScroll);
+	$(window).scroll(onScroll).resize(onScroll);
 	onScroll();
 	$('button').addClass('active');
 	$('.button-next-page').each(function() {
