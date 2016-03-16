@@ -17,13 +17,22 @@ $(function() {
 				'.sub-title',
 				'.button-1'
 			], 1, {opacity: 0, top: -50, ease: Power2.Out}, 0.5, animateEnd).stop(),
-		2: new TimelineMax({onComplete: animateEnd}).from('.title-2', 1, 
-			{opacity: 0, top: -50, ease: Power2.Out}, 0.5, animateEnd).stop()
+		2: new TimelineMax({onComplete: animateEnd}).staggerFrom([
+				'.title-2',
+				'.button-2'
+			], 1, {opacity: 0, top: -50, ease: Power2.Out}, 5, animateEnd).stop(),
+		3: new TimelineMax({onComplete: animateEnd}).staggerFrom([
+				'.title-3',
+				'.button-3'
+			], 1, {opacity: 0, top: -50, ease: Power2.Out}, 5, animateEnd).stop()
 	};
 	var enterEvents = {
 		2: function() {
 			slowPrintPage2();
-		}
+		},
+		3: function() {
+			slowPrintPage3();
+		}	
 	};
 	var prepareSlowPrint = function(J) {
 		var J2 = J.clone();
@@ -92,6 +101,7 @@ $(function() {
 		J.addClass('p' + p);
 	});
 	var slowPrintPage2 = prepareSlowPrint($('p', '.p2'));
+	var slowPrintPage3 = prepareSlowPrint($('p', '.p3'));
 	$('.pad').each(function() {
 		var J = $(this);
 		J.height(J.data("pad"));
