@@ -171,7 +171,6 @@ $(function() {
                 biggest = true;
             } 
             if ((pagePositions[i] - $(document).scrollTop()) < 200) {
-                page = i;
                 if (entered.indexOf(i) === -1) {
                     entered.push(i);
                     if (typeof enterEvents[i] === 'function') {
