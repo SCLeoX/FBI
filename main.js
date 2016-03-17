@@ -166,11 +166,11 @@ $(function() {
         });
         var biggest = false;
         for (var i = pagePositions.length - 1; i > 0; i--) {
-            if (!biggest) {
-                page = i;
-                biggest = true;
-            } 
             if ((pagePositions[i] - $(document).scrollTop()) < 200) {
+                if (!biggest) {
+                    page = i;
+                    biggest = true;
+                } 
                 if (entered.indexOf(i) === -1) {
                     entered.push(i);
                     if (typeof enterEvents[i] === 'function') {
